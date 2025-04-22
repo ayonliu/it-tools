@@ -73,13 +73,20 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
 }
 
 .tool-layout {
-  max-width: 600px;
-  margin: 0 auto;
+  // max-width: 600px;
+  // margin: 0 auto;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
 
   .tool-header {
     padding: 40px 0;
     width: 100%;
+    flex: 0 1 1024px;
 
     .n-h1 {
       opacity: 0.9;
