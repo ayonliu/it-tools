@@ -238,8 +238,8 @@ tools:
     description: Find the vendor and manufacturer of a device by its MAC address.
 
   mime-types:
-    title: MIME types
-    description: Convert MIME types to file extensions and vice-versa.
+    title: MIME types(Media Types)
+    description: MIME Type(Media Types) and File Extension Bidirectional Conversion Tool.
 
   toml-to-json:
     title: TOML to JSON
