@@ -112,11 +112,11 @@ function activateOption(option: PaletteOption) {
 
 <template>
   <div flex-1>
-    <c-button w-full important:justify-start @click="isModalOpen = true">
+    <c-button w-full important:justify-start important:h-50px important:rounded-30px important:text-18px @click="isModalOpen = true">
       <span flex items-center gap-3 op-40>
 
-        <icon-mdi-search />
-        {{ $t('search.label') }}
+        <icon-mdi-search text-26px />
+        {{ $t('search.placeholder') }}
 
         <span hidden flex-1 border border-current border-op-40 rounded border-solid px-5px py-3px sm:inline>
           {{ isMac ? 'Cmd' : 'Ctrl' }}&nbsp;+&nbsp;K

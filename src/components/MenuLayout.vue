@@ -17,10 +17,17 @@ const siderPosition = computed(() => (isSmallScreen.value ? 'absolute' : 'static
       :show-trigger="false"
       :native-scrollbar="false"
       :position="siderPosition"
+      :style="{
+        backgroundColor: '#f6f7fa',
+        height: '100vh',
+      }"
     >
       <slot name="sider" />
     </n-layout-sider>
-    <n-layout class="content">
+    <n-layout class="content" :style="{
+        backgroundColor: 'white',
+        minHeight: '100vh',
+      }">
       <slot name="content" />
       <div v-show="isSmallScreen && !isMenuCollapsed" class="overlay" @click="isMenuCollapsed = true" />
     </n-layout>

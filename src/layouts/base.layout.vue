@@ -90,7 +90,8 @@ const tools = computed<ToolCategory[]>(() => [
     </template>
 
     <template #content>
-      <div flex items-center justify-center gap-2>
+      <div flex items-center justify-center gap-2 w-1140px mx-auto>
+        <!--
         <c-button
           circle
           variant="text"
@@ -105,6 +106,7 @@ const tools = computed<ToolCategory[]>(() => [
             <NIcon size="25" :component="Home2" />
           </c-button>
         </c-tooltip>
+        -->
 
         <!-- <c-tooltip :tooltip="$t('home.uiLib')" position="bottom">
           <c-button v-if="config.app.env === 'development'" to="/c-lib" circle variant="text" :aria-label="$t('home.uiLib')">
@@ -211,7 +213,7 @@ const tools = computed<ToolCategory[]>(() => [
     }
 
     .subtitle {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }

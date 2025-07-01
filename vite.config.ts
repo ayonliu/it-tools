@@ -15,12 +15,14 @@ import { VitePWA } from 'vite-plugin-pwa';
 import markdown from 'vite-plugin-vue-markdown';
 import svgLoader from 'vite-svg-loader';
 import { configDefaults } from 'vitest/config';
+import commonjs from 'vite-plugin-commonjs';
 
 const baseUrl = process.env.BASE_URL ?? '/';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    commonjs(),
     VueI18n({
       runtimeOnly: true,
       jitCompilation: true,
@@ -56,6 +58,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
+      workbox: {
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB limit
+      },
       manifest: {
         name: 'Tool expert',
         description: 'Aggregated set of useful tools for everyone.',

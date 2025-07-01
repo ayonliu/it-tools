@@ -2,7 +2,7 @@ import { defineThemes } from './theme.models';
 
 export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
   light: {
-    background: '#ffffff',
+    background: '#f6f7fa',
     text: {
       baseColor: '#333639',
       mutedColor: '#767c82',

@@ -4,7 +4,7 @@ home:
     favoriteTools: 'Your favorite tools'
     allTools: 'All the tools'
     favoritesDndToolTip: 'Drag and drop to reorder favorites'
-  subtitle: 'Handy and free online tools by tool expert'
+  subtitle: 'Free online tools by tool expert'
   toggleMenu: 'Toggle menu'
   home: Home
   uiLib: 'UI Lib'
@@ -57,6 +57,7 @@ toolCard:
   new: New
 search:
   label: Search
+  placeholder: 'Type here to search free online tools...'
 tools:
   categories:
     favorite-tools: 'Your favorite tools'

@@ -10,7 +10,7 @@ import { config } from '@/config';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'ToolPert - Handy and free online tools by toolexpert for everyone' });
+useHead({ title: 'ToolPert - Handy and free online tools by tool expert for everyone' });
 const { t } = useI18n();
 
 const favoriteTools = computed(() => toolStore.favoriteTools);
